@@ -42,13 +42,13 @@ const AppDetails = () => {
 
     //
 
- useEffect(() => {
-    const updateInstallApps = JSON.parse(localStorage.getItem("installApps") || []);
-    const updateAllready = updateInstallApps.some(i => i.id === app.id);
-    if(updateAllready){
+    useEffect(() => {
+    const savedApps = JSON.parse(localStorage.getItem("installApps")) || [];
+    const isAlreadyInstalled = savedApps.some(item => item.id === app.id);
+    if (isAlreadyInstalled) {
         setinstall(true);
     }
- }, [app.id])
+}, [app.id]);
 
 
     //

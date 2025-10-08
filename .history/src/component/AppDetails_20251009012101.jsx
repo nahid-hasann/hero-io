@@ -45,7 +45,7 @@ const AppDetails = () => {
  useEffect(() => {
     const updateInstallApps = JSON.parse(localStorage.getItem("installApps") || []);
     const updateAllready = updateInstallApps.some(i => i.id === app.id);
-    if(updateAllready){
+    if(updateallready){
         setinstall(true);
     }
  }, [app.id])
