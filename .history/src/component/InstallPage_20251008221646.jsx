@@ -1,0 +1,16 @@
+import React, { useEffect, useState } from 'react';
+
+const InstallPage = () => {
+    const [installApps, setInstalleApps] = useState([]);
+    useEffect(() => {
+      const saved = JSON.parse(localStorage.getItem("installApps"));
+      setInstalleApps
+    }, [])
+    return (
+        <div>
+            
+        </div>
+    );
+};
+
+export default InstallPage;

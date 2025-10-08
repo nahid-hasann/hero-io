@@ -1,0 +1,36 @@
+import React from 'react';
+import { FaGithub } from "react-icons/fa";
+import logo from "../img/logo.png"
+
+const Header = () => {
+    return (
+        <header className="flex items-center justify-between px-6 py-4 bg-white shadow-sm">
+         
+
+
+            
+            <nav className="hidden md:flex items-center space-x-6">
+                <a href="#" className="text-indigo-500 font-medium">Home</a>
+                <a href="#" className="text-gray-700 hover:text-indigo-500">Apps</a>
+                <a href="#" className="text-gray-700 hover:text-indigo-500">Installation</a>
+            </nav>
+
+          
+            <a
+                href="https://github.com/nahid-hasann"
+                className="flex items-center bg-gradient-to-r from-indigo-500 to-purple-500 text-white px-4 py-2 rounded-lg font-medium hover:opacity-90 transition"
+            >
+                <FaGithub className="mr-2" /> Contribute
+            </a>
+
+           
+            <div className="md:hidden">
+                <button className="text-gray-700 focus:outline-none">
+                    ☰
+                </button>
+            </div>
+        </header>
+    );
+};
+
+export default Header;
