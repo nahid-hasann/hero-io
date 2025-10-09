@@ -6,7 +6,7 @@ const AppsCard = ({ data }) => {
     return (
         <Link to={`/appdetails/${data.id}`} >
 
-            <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition p-[20px]">
+            <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition p-3  my-[]">
 
                 <div className="w-full h-48 bg-gray-100 rounded-xl overflow-hidden mb-3">
                     <img

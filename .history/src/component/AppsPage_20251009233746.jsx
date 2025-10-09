@@ -78,7 +78,9 @@ const AppsPage = () => {
                         />
                     </div>
                 </div>
-            </div>         
+            </div>
+
+           
             <div>
                 {searching ? (
                     <div className="flex justify-center items-center h-64">

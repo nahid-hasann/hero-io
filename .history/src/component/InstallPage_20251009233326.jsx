@@ -91,8 +91,8 @@ const InstallPage = () => {
                             <div className="dropdown">
                                 <div tabIndex={0} role="button" className="btn m-1">Sort</div>
                                 <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-1 w-[100px] p-2 shadow-sm">
-                                    <li><a className='text-center' onClick={() => handleSort("low to high")} >Low to High</a></li>
-                                    <li><a className='text-center' onClick={() => handleSort("high to low")}>High to Low</a></li>
+                                    <li><a onClick={() => handleSort("low to high")} >Low to High</a></li>
+                                    <li><a onClick={() => handleSort("high to low")}>High to Low</a></li>
                                 </ul>
                             </div>
                         </div>

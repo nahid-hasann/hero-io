@@ -91,13 +91,13 @@ const InstallPage = () => {
                             <div className="dropdown">
                                 <div tabIndex={0} role="button" className="btn m-1">Sort</div>
                                 <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-1 w-[100px] p-2 shadow-sm">
-                                    <li><a className='text-center' onClick={() => handleSort("low to high")} >Low to High</a></li>
-                                    <li><a className='text-center' onClick={() => handleSort("high to low")}>High to Low</a></li>
+                                    <li><a onClick={() => handleSort("low to high")} >Low to High</a></li>
+                                    <li><a onClick={() => handleSort("high to low")}>High to Low</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <div className="space-y-4 px-[40px]">
+                    <div className="space-y-4 ">
                         {installedApps.map((app) => (
                             <div key={app.id} className="flex items-center justify-between bg-white shadow p-4 rounded-lg">
                                 <div className="flex items-center gap-4">

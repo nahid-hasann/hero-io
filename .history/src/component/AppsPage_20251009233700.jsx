@@ -53,7 +53,7 @@ const AppsPage = () => {
     return (
 
         <div className="my-[50px] max-w-[1440px] mx-auto px-4 md:px-8">
-           
+            {/* --- Title Section --- */}
             <div>
                 <h1 className="text-center font-bold text-3xl md:text-5xl mb-2">
                     Our All Applications
@@ -61,7 +61,9 @@ const AppsPage = () => {
                 <p className="text-center text-base md:text-lg text-gray-500">
                     Explore All Apps on the Market developed by us. We code for Millions.
                 </p>
-            </div>         
+            </div>
+
+            {/* --- Top Bar (Apps Count + Search) --- */}
             <div className="flex flex-col md:flex-row justify-between items-center gap-4 my-10">
                 <h1 className="text-lg font-semibold text-gray-700">
                     ({datas.length}) Apps Found
@@ -78,7 +80,9 @@ const AppsPage = () => {
                         />
                     </div>
                 </div>
-            </div>         
+            </div>
+
+            {/* --- Apps Grid --- */}
             <div>
                 {searching ? (
                     <div className="flex justify-center items-center h-64">
