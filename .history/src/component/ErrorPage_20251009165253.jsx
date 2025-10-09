@@ -13,8 +13,8 @@ const ErrorPage = () => {
                     <img src={errorPage} alt="" />
                     <h1 className='text-[48px] font-semibold text-center mt-[20px]' >Oops, page not found!</h1>
                     <p className='text-[20px] text-[#627382] text-center my-[10px]'>The page you are looking for is not available.</p>
-                  <Link to="/">
-                    <button className="btn bg-[#6e37e6] text-white"> Go Back </button>
+                  <Link>
+                  
                   </Link>
                 </div>
             </div>
