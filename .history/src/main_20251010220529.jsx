@@ -25,11 +25,7 @@ const router = createBrowserRouter([
         loader: () => fetch("/apps.json"),
         element: <Home></Home>
       },
-      {
-        path: "/apps",
-        loader: () => fetch("/apps2.json"),
-        element: <AppsPage></AppsPage>
-      },
+   
       {
         path: "/appdetails/:id",
         loader: async () => {
@@ -40,6 +36,10 @@ const router = createBrowserRouter([
           return [...data1, ...data2];
         },
         element: <AppDetails></AppDetails>
+      },   {
+        path: "/apps",
+        loader: () => fetch("/apps2.json"),
+        element: <AppsPage></AppsPage>
       },
       {
         path: "/install",

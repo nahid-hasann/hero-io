@@ -32,18 +32,14 @@ const router = createBrowserRouter([
       },
       {
         path: "/appdetails/:id",
-        loader: async () => {
-          const res1 = await fetch("/apps.json");
-          const data1 = await res1.json();
-          const res2 = await fetch("/apps2.json");
-          const data2 = await res2.json();
-          return [...data1, ...data2];
-        },
+        loader: async (params) => {
+          
+        }
         element: <AppDetails></AppDetails>
       },
       {
         path: "/install",
-        element: <InstallPage></InstallPage>
+        element : <InstallPage></InstallPage>
       }
     ]
   },

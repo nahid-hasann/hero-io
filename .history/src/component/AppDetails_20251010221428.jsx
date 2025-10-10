@@ -43,8 +43,7 @@ const AppDetails = () => {
     //
 
 useEffect(() => {
-    
-  if (!app) return; 
+  if (!app) return; // ✅ app undefined হলে কিছু করবে না
 
   const updateInstallApps = JSON.parse(localStorage.getItem("installApps")) || [];
   const updateAllready = updateInstallApps.some(i => i.id === app.id);

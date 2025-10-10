@@ -43,7 +43,6 @@ const AppDetails = () => {
     //
 
 useEffect(() => {
-    
   if (!app) return; 
 
   const updateInstallApps = JSON.parse(localStorage.getItem("installApps")) || [];
